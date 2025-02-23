@@ -1,0 +1,49 @@
+@use '../abstract/variaveis' as variaveis;
+@use '../abstract/mixins' as mixins;
+
+.container__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    &-conteudo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6.5rem;
+        padding: 2.5rem 7.5rem;
+        width: 90%;
+        &-texto {
+            line-height: 1;
+            h2 {
+                @include mixins.ff-fs-c(variaveis.$titulo, variaveis.$h2, variaveis.$roxo-vibrante);
+                width: 36rem;
+                line-height: 120%;
+            }
+
+            p{
+                @include mixins.ff-fs-c(variaveis.$paragrafo, variaveis.$pl, variaveis.$roxo-escuro);
+                margin: 1rem 0;
+                width: 36rem;
+                line-height: 150%;
+            }
+
+            img {
+                width: 36rem;
+            }
+        }
+        &-img {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+            img {
+                object-fit: cover;
+                border-radius: 32px;
+                width: 15rem;
+                height: 20rem;
+            }
+        }
+    }
+}

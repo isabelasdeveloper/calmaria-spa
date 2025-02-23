@@ -1,0 +1,22 @@
+@use './components/header';
+@use './components/principal';
+@use './components/servicos';
+@use './components/descontos';
+@use './components/contato';
+@use './components/footer';
+@use './components/responsivo';
+@use './abstract/variaveis';
+
+html, body {
+    overflow-x: hidden;  // Isso impede a rolagem horizontal na página inteira
+}
+
+header {
+    background: variaveis.$gradiente;
+}
+
+
+
+
+
+

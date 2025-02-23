@@ -1,0 +1,645 @@
+/* 42px */
+/* 31px */
+/* 26px */
+/* 22px */
+/* 15px */
+.container__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 7.5rem;
+}
+.container__header .linha {
+  background-color: black;
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.container__navegacao-lista {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.container__navegacao-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #0C0421;
+}
+.container__navegacao-link:hover {
+  color: #4E75FF;
+}
+
+.container__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+.container__home-left {
+  width: 30rem;
+}
+.container__home-left h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 2.625rem;
+  color: #0C0421;
+  line-height: 150%;
+}
+.container__home-left .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: white;
+  background-color: #4E75FF;
+  border-radius: 40px;
+  border: none;
+  padding: 1em 3em;
+  margin-top: 2rem;
+}
+.container__home-left .btn:hover {
+  background-color: #85A0FF;
+}
+.container__home-left h1 span {
+  color: #4E75FF;
+}
+.container__home-img {
+  width: 28rem;
+}
+
+.container__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+.container__principal-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+  padding: 2.5rem 7.5rem;
+  width: 90%;
+}
+.container__principal-conteudo-texto {
+  line-height: 1;
+}
+.container__principal-conteudo-texto h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9375rem;
+  color: #4E75FF;
+  width: 36rem;
+  line-height: 120%;
+}
+.container__principal-conteudo-texto p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #0C0421;
+  margin: 1rem 0;
+  width: 36rem;
+  line-height: 150%;
+}
+.container__principal-conteudo-texto img {
+  width: 36rem;
+}
+.container__principal-conteudo-img {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+.container__principal-conteudo-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 32px;
+  width: 15rem;
+  height: 20rem;
+}
+
+.container__servicos {
+  display: flex;
+  padding: 5rem 7.5rem;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+.container__servicos-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  width: 24rem;
+  height: auto;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 32px;
+}
+.container__servicos-card .card-titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.625rem;
+  color: #0C0421;
+  line-height: 150%;
+  text-align: center;
+}
+.container__servicos-card .card-texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #0C0421;
+  line-height: 150%;
+  text-align: center;
+}
+.container__servicos-card .img-icone {
+  width: 6rem;
+  height: 6rem;
+}
+.container__servicos-card .img-star {
+  width: 2rem;
+}
+
+.container__descontos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+  padding: 3.2rem 10.5rem;
+  background-image: url(/assets/Mandala-esquerda.svg), url(/assets/Mandala-direita.svg);
+  background-position: left center, right center;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+}
+.container__descontos-titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9375rem;
+  color: #0C0421;
+}
+.container__descontos-texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #0C0421;
+  white-space: nowrap;
+  margin: 1.5rem 0 2rem 0;
+}
+.container__descontos-formulario {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  height: 4rem;
+  border: 1px solid #4E75FF;
+  border-radius: 65px;
+  margin: 0 auto;
+}
+.container__descontos-formulario:hover {
+  border: 1px solid #85A0FF;
+}
+.container__descontos-formulario-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+  width: 65%;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+.container__descontos-formulario-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: white;
+  background-color: #4E75FF;
+  width: 35%;
+  border-radius: 0 4rem 4rem 0;
+  border: none;
+}
+.container__descontos-formulario-btn:hover {
+  background-color: #85A0FF;
+}
+
+.container__contato {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem 1rem;
+}
+.container__contato-imagens {
+  max-width: 40%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container__contato-imagens .imagem-grid {
+  display: flex;
+  gap: 1rem;
+}
+.container__contato-formulario {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem 3rem;
+  border-radius: 3rem;
+  gap: 1.5rem;
+}
+.container__contato-formulario h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9375rem;
+  color: #4E75FF;
+}
+.container__contato-formulario p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #0C0421;
+  line-height: 150%;
+  margin: 1rem 0;
+}
+.container__contato-formulario .formulario-input h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: #0C0421;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.container__contato-formulario .formulario-input input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: #0C0421;
+  width: 90%;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem;
+}
+.container__contato-formulario .formulario-input input:focus {
+  border: none;
+  outline: none;
+}
+.container__contato-formulario .formulario-input .text-box {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: #0C0421;
+  width: 90%;
+  height: 6rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.container__contato-formulario .formulario-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #4E75FF;
+  width: 70%;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-radius: 2.5rem;
+  position: 50%;
+  border: none;
+}
+.container__contato-formulario .formulario-btn:hover {
+  background-color: #85A0FF;
+}
+.container__contato-formulario .box-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container__rodape {
+  padding: 1.5rem 7.5rem;
+  background: #E8F5C8;
+}
+.container__rodape p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  color: #0C0421;
+  text-align: center;
+}
+
+@media (min-width: 1460px) and (max-width: 1710px) {
+  .container__contato-formulario .formulario-input .text-box {
+    height: 5rem;
+  }
+}
+@media (max-width: 1460px) {
+  .container__contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 0 3.75rem;
+  }
+  .container__contato-imagens {
+    max-width: none;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: nowrap;
+  }
+  .container__contato-imagens .imagem-grid {
+    gap: 2rem;
+  }
+  .container__contato-imagens .imagem-grid .img-principal {
+    position: relative;
+    -o-object-position: 50% 20%;
+       object-position: 50% 20%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3rem;
+    height: 20rem;
+    width: 100%;
+  }
+  .container__contato-imagens .imagem-grid .img-secundaria {
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3rem;
+    height: 30rem;
+    width: 45%;
+  }
+  .container__contato-imagens .imagem-grid .img-terciaria {
+    position: relative;
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3rem;
+    height: 30rem;
+    width: 55%;
+  }
+  .container__contato-formulario {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+    padding: 2rem 3rem;
+    border-radius: 3rem;
+    gap: 1.5rem;
+  }
+  .container__contato-formulario h2 {
+    font-family: "Krona One", sans-serif;
+    font-size: 1.9375rem;
+    color: #4E75FF;
+  }
+  .container__contato-formulario p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.375rem;
+    color: #0C0421;
+    line-height: 150%;
+    margin: 1rem 0;
+  }
+  .container__contato-formulario .formulario-input h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    color: #0C0421;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .container__contato-formulario .formulario-input input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    color: #0C0421;
+    width: 90%;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem;
+  }
+  .container__contato-formulario .formulario-input input:focus {
+    border: none;
+    outline: none;
+  }
+  .container__contato-formulario .formulario-input .text-box {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    color: #0C0421;
+    width: 90%;
+    height: 8rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+  .container__contato-formulario .formulario-btn {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #4E75FF;
+    width: 70%;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 2.5rem;
+    position: 50%;
+    border: none;
+  }
+  .container__contato-formulario .formulario-btn:hover {
+    background-color: #85A0FF;
+  }
+  .container__contato-formulario .box-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1280px) {
+  .container__home {
+    background-image: url(/assets/Mandala-esquerda.svg), url(/assets/Mandala-direita.svg);
+    background-position: left center, right center;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 15%;
+    margin: 5rem 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container__home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__home-img {
+    display: none;
+  }
+  .container__principal {
+    gap: 2rem;
+  }
+  .container__principal-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    gap: 2rem;
+  }
+  .container__principal-conteudo .img-principal {
+    border-radius: 32px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 20rem;
+    -o-object-position: 80% 100%;
+       object-position: 80% 100%;
+  }
+  .container__principal-conteudo .img-secundaria {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 32px;
+    width: 100%;
+    height: 20rem;
+    -o-object-position: 40% 40%;
+       object-position: 40% 40%;
+  }
+  .container__principal-conteudo-texto {
+    width: 100%;
+  }
+  .container__principal-conteudo-texto h2 {
+    width: 100%;
+  }
+  .container__principal-conteudo-texto p {
+    width: 100%;
+  }
+  .container__principal-conteudo-texto #separador-direita {
+    width: 100%;
+  }
+  .container__principal-conteudo-texto #separador-esquerda {
+    display: none;
+  }
+  .container__principal-conteudo-img {
+    gap: 2rem;
+    width: 100%;
+  }
+  .container__principal-conteudo-img img {
+    width: 19.5rem;
+    height: 20rem;
+  }
+  .container__servicos {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    width: 100%;
+  }
+  .container__servicos-card {
+    width: 65%;
+  }
+  .container__descontos {
+    background-size: 15%;
+  }
+  .container__descontos-titulo {
+    text-align: center;
+  }
+  .container__descontos-texto {
+    text-align: center;
+    white-space: normal;
+    max-width: 100%;
+  }
+  .container__descontos-formulario {
+    width: 100%;
+  }
+}
+@media (max-width: 815px) {
+  .container__header {
+    padding: 2.5rem 0;
+    width: 100%;
+  }
+  .container__header .linha {
+    margin: 2rem 0;
+    width: 90%;
+  }
+  .container__navegacao-lista {
+    gap: 2rem;
+  }
+  .container__navegacao-link {
+    font-size: 1rem;
+  }
+  .container__home {
+    background-image: none;
+    margin: 2.5rem 0;
+    padding: 0 2rem;
+  }
+  .container__home-left h1 {
+    line-height: 120%;
+    font-size: 2.2rem;
+  }
+  .container__principal {
+    margin: 2.5em 0;
+    padding: 2rem 0;
+  }
+  .container__principal-conteudo .img-principal {
+    height: 15rem;
+  }
+  .container__principal-conteudo .img-secundaria {
+    width: 50%;
+  }
+  .container__principal-conteudo-img {
+    gap: 1rem;
+  }
+  .container__servicos {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  .container__servicos-card .card-texto {
+    font-size: 1.125rem;
+  }
+  .container__descontos {
+    background-image: none;
+    margin: 1rem 0;
+    padding: 2rem 0;
+    width: 100%;
+  }
+  .container__descontos-titulo {
+    margin: 0 2rem;
+  }
+  .container__descontos-texto {
+    margin: 1.5rem 2rem;
+  }
+  .container__descontos-formulario {
+    width: 80%;
+    margin: 0;
+  }
+  .container__descontos-formulario-btn {
+    font-size: 1rem;
+  }
+  .container__contato {
+    justify-content: center;
+    gap: 1rem;
+    margin: 2.5rem 3.75rem;
+  }
+  .container__contato-imagens {
+    max-width: none;
+    width: none;
+    gap: 1rem;
+  }
+  .container__contato-imagens .imagem-grid .img-principal {
+    height: 15rem;
+  }
+  .container__contato-imagens .imagem-grid .img-secundaria {
+    -o-object-position: 60% 100%;
+       object-position: 60% 100%;
+    height: 20rem;
+  }
+  .container__contato-imagens .imagem-grid .img-terciaria {
+    width: 45%;
+    height: 20rem;
+  }
+  .container__contato-formulario {
+    max-width: none;
+    width: 95%;
+    margin: 2rem 0;
+  }
+  .container__contato-formulario p {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+  .container__rodape {
+    padding: 1.5rem 2.5rem;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+}/*# sourceMappingURL=styles.css.map */

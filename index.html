@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Calmaria Spa</title>
+</head>
+<body>
+    <header>
+        <section class="container__header">
+            <img src="assets/Logo.svg" alt="Logo no cabeçalho do Calmaria Spa">
+            <span class="linha"></span>
+            <nav class="container__navegacao">
+                <ul class="container__navegacao-lista">
+                    <li><a class="container__navegacao-link" href="#">Nosso espaço</a></li>
+                    <li><a class="container__navegacao-link" href="#">Serviços</a></li>
+                    <li><a class="container__navegacao-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container__home">
+            <div class="container__home-left">
+                <h1>Boas-vindas ao seu refúgio de <span>paz e bem-estar</span></h1>
+                <button class="btn">Quero relaxar!</button>
+            </div>
+                <img class="container__home-img" src="assets/Hero.png" alt="Imagem de mulher recebendo massagem relaxante">
+        </section>
+    </header>
+    <main>
+        <section class="container__principal">
+            <div class="container__principal-conteudo">
+                <img class="img-principal" src="assets/Frame14382.png" alt="####">
+                <div class="container__principal-conteudo-texto">
+                    <h2>Tecnologia e natureza potencializando seu relaxamento</h2>
+                    <p>
+                    Oferecemos equipamentos de ponta, produtos certificados e uma equipe de 
+                    profissionais ultra qualificados para dissipar seu estresse e 
+                    ajudar você em sua busca por equilíbrio e tranquilidade.
+                    </p>
+                    <img id="separador-direita" src="assets/Separadordireita.svg" alt="###">
+                </div>
+            </div>
+            <div class="container__principal-conteudo">
+                <div class="container__principal-conteudo-texto">
+                    <h2>Tecnologia e natureza potencializando seu relaxamento</h2>
+                    <p>
+                    Oferecemos equipamentos de ponta, produtos certificados e uma equipe de 
+                    profissionais ultra qualificados para dissipar seu estresse e 
+                    ajudar você em sua busca por equilíbrio e tranquilidade.
+                    </p>
+                    <img id="separador-esquerda" src="assets/Separadoresquerda.svg" alt="">
+                </div>
+                <div class="container__principal-conteudo-img">
+                    <img class="img-secundaria" src="assets/Frame 14388.png" alt="###">
+                    <img class="img-secundaria" src="assets/Frame 14389.png" alt="###">
+                </div>
+                
+            </div>
+        </section>
+        <section class="container__servicos">
+            <div class="container__servicos-card">
+                <img  class="img-icone" src="assets/Icone-massagens.svg">
+                <h3 class="card-titulo" >Massagens</h3>
+                <img class="img-star" src="assets/Soft-star.svg">
+                <p class="card-texto">
+                    Relaxantes, terapêuticas, desportivas e drenagens. 
+                    Conte com nossos terapeutas especializados para aliviar suas tensões, tratar dores e 
+                    retenção de líquido através dessa técnica milenar tão eficiente para o organismo humano.
+                </p>
+            </div>
+            <div class="container__servicos-card">
+                <img class="img-icone" src="assets/Icone-tratamentos.svg">
+                <h3 class="card-titulo">Tratamentos</h3>
+                <img class="img-star" src="assets/Soft-star.svg">
+                <p class="card-texto">
+                    Tratamos sua pele com gentileza através de esfoliações corporais suaves, 
+                    hidratações profundas do corpo e do rosto, além de limpeza facial. 
+                    Você também pode desfrutar de banhos revigorantes de sais, proporcionando relaxamento e bem-estar.
+                </p>
+            </div>
+            <div class="container__servicos-card">
+                <img class="img-icone" src="assets/Icone-dias.svg">
+                <h3 class="card-titulo">Dias Especiais</h3>
+                <img class="img-star" src="assets/Soft-star.svg">
+                <p class="card-texto">
+                    Pacotes cuidadosamente elaborados, desde o  "Dia Revitalizante" com massagens 
+                    e tratamentos faciais, até o "Dia Serenidade" com banhos terapêuticos e 
+                    meditação. Mime-se com momentos de refúgio e tranquilidade.
+                </p>
+            </div>
+
+        </section>
+        <section class="container__descontos">
+            <h2 class="container__descontos-titulo">Inscreva-se para ganhar descontos</h2>
+            <p class="container__descontos-texto">
+                Cadastre seu email para receber descontos e 
+                novidades sobre o espaço e nossos serviços. 
+            </p>
+            <form class="container__descontos-formulario">
+                <input class="container__descontos-formulario-input" type="text" id="email">
+                <button class="container__descontos-formulario-btn" onclick="inscrever()">Inscrever</button>
+            </form>
+        </section>
+        <section class="container__contato">
+            <div class="container__contato-imagens">
+                <div class="imagem-grid">
+                    <img class="img-principal" src="/assets/Frame14382.svg" alt="#">
+                </div>
+                <div class="imagem-grid">
+                    <img class="img-secundaria" src="/assets/Frame14383.svg" alt="#">
+                    <img class="img-terciaria" src="/assets/Frame14384.svg" alt="#">
+                </div>
+            </div>
+            <form class="container__contato-formulario"> 
+                <h2>Entre em contato</h2>
+                <p>
+                    Reserve seu horário, tire dúvidas ou 
+                    proponha sugestões, nosso canal é aberto para você!
+                </p>
+                <div class="formulario-input">
+                    <h3>Nome</h3>
+                    <input type="text" placeholder="Digite seu nome completo" id="nome">
+                </div>
+                <div class="formulario-input">
+                    <h3>Email</h3>
+                    <input type="text" placeholder="Digite seu email" id="email">
+                </div>
+                <div class="formulario-input">
+                    <h3>Telefone</h3>
+                    <input type="text" placeholder="(XX) XXXXX-XXXX" id="telefone">
+                </div>
+                <div class="formulario-input">
+                    <h3>Mensagem</h3>
+                    <textarea class="text-box" type="text" id="mensagemContato" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div class="box-btn">
+                    <button class="formulario-btn" onclick="inscrever()">Enviar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer class="container__rodape">
+            <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    
+</body>
+</html>

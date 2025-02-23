@@ -1,0 +1,327 @@
+@use '../abstract/variaveis' as variaveis;
+@use '../abstract/mixins' as mixins;
+
+@media (min-width: 1460px) and (max-width: 1710px) { //Versão desktop - respnsividade botão
+    .container__contato-formulario .formulario-input .text-box {
+        height: 5rem;
+    }
+}
+
+@media (max-width: 1460px) { //Versão desktop - layout compacto
+    .container__contato{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        margin: 0 3.75rem;
+        &-imagens {
+            max-width: none;
+            width: 100%;
+            gap: 2rem;
+            flex-wrap: nowrap;
+            .imagem-grid {
+                gap: 2rem;
+                .img-principal {
+                    position: relative;
+                    object-position: 50% 20%;
+                    object-fit: cover;
+                    border-radius: 3rem;
+                    height: 20rem;
+                    width: 100%;
+                }
+                .img-secundaria {
+                    position: relative;
+                    object-fit: cover;
+                    border-radius: 3rem;
+                    height: 30rem;
+                    width: 45%;
+                }
+
+                .img-terciaria {
+                    position: relative;
+                    object-position: 50% 60%;
+                    object-fit: cover;
+                    border-radius: 3rem;
+                    height: 30rem;
+                    width: 55%;
+                }
+            }
+        }
+        
+        &-formulario {
+            max-width: 65%;
+            display: flex;
+            flex-direction: column;
+            background: variaveis.$gradiente;
+            padding: 2rem 3rem;
+            border-radius: 3rem;
+            gap: 1.5rem;
+            h2 {
+                @include mixins.ff-fs-c(variaveis.$titulo, variaveis.$h2, variaveis.$roxo-vibrante);
+            }
+            p {
+                @include mixins.ff-fs-c(variaveis.$paragrafo, variaveis.$pl, variaveis.$roxo-escuro);
+                line-height: 150%;
+                margin: 1rem 0;
+            }
+    
+            .formulario-input {
+                h3 {
+                    @include mixins.ff-fs-c(variaveis.$paragrafo, 1.125rem, variaveis.$roxo-escuro);
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+    
+                input {
+                    @include mixins.ff-fs-c(variaveis.$paragrafo, 1.125rem, variaveis.$roxo-escuro);
+                    width: 90%;
+                    border-radius: 2rem;
+                    border: none;
+                    padding: 1rem;
+                    &:focus {
+                        border: none;
+                        outline: none;
+                    }
+                }
+    
+                .text-box {
+                    @include mixins.ff-fs-c(variaveis.$paragrafo, 1.125rem, variaveis.$roxo-escuro);
+                    width: 90%;
+                    height: 8rem;
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    resize: none;
+                }
+            }
+    
+            .formulario-btn {
+                @include mixins.ff-fs-c(variaveis.$paragrafo, 1.4rem, white);
+                background-color: variaveis.$roxo-vibrante;
+                width: 70%;
+                padding: 1.5rem 0;
+                text-align: center;
+                border-radius: 2.5rem;
+                position: 50%;
+                border: none;
+                &:hover {
+                    background-color: variaveis.$roxo-calmante;
+                }
+            }
+    
+            .box-btn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) { //Versão tablet
+    .container__home {
+        @include mixins.fundo-mandalas();
+        background-size: 15%;
+        margin: 5rem 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-img {
+            display: none;
+        }
+    }
+    .container__principal {
+        gap: 2rem;
+        &-conteudo {
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+            padding: 0;
+            gap: 2rem;
+            .img-principal {
+                border-radius: 32px;
+                object-fit: cover;
+                width: 100%;
+                height: 20rem;
+                object-position: 80% 100%;
+            }
+            .img-secundaria {
+                object-fit: cover;
+                border-radius: 32px;
+                width: 100%;
+                height: 20rem;
+                object-position: 40% 40%;
+            }
+            &-texto {
+                h2 {
+                    width: 100%;
+                }
+                p {
+                    width: 100%;
+                }
+                width: 100%;
+                #separador-direita {
+                    width: 100%;
+                }
+
+                #separador-esquerda {
+                    display: none;
+                }
+            }
+            &-img {
+                gap: 2rem;
+                width: 100%;
+                img {
+                    width: 19.5rem;
+                    height: 20rem;
+                }
+            }
+        }
+    }
+    .container__servicos {
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        width: 100%;
+        &-card {
+            width: 65%;
+        }
+    }
+    .container__descontos {
+        background-size: 15%;
+        &-titulo {
+            text-align: center;
+        }
+        &-texto {
+            text-align: center;
+            white-space: normal;
+            max-width: 100%;
+        }
+        &-formulario {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 815px){ //Versão mobile
+    .container__header {
+        padding: 2.5rem 0;
+        width: 100%;
+        .linha {
+            margin: 2rem 0;
+            width: 90%;
+        }
+    }
+
+    .container__navegacao {
+        &-lista {
+            gap: 2rem;
+        }
+        &-link {
+            font-size: 1rem;
+        }
+    }
+
+    .container__home {
+        margin: 2.5rem 0;
+        padding: 0 2rem;
+        &-left {
+            h1 {
+                line-height: 120%;
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    .container__principal {
+        margin: 2.5em 0;
+        padding: 2rem 0;
+        &-conteudo {
+            .img-principal {
+                height: 15rem;
+            }
+            .img-secundaria {
+                width: 50%;
+            }
+            &-img {
+                gap: 1rem;
+            }
+        }
+    }
+
+    .container__servicos {
+    margin: 0;
+    padding: 2rem 0;
+        &-card {
+            .card-texto {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .container__descontos {
+        background-image: none;
+        margin: 1rem 0;
+        padding: 2rem 0;
+        width: 100%;
+        &-titulo {
+            margin: 0 2rem;
+        }
+        &-texto{
+            margin: 1.5rem 2rem;
+        }
+        &-formulario {
+            width: 80%;
+            margin: 0;
+            &-btn {
+                font-size: 1rem;
+            }
+        }
+        
+    }
+
+    .container__contato {
+        justify-content: center;
+        gap: 1rem;
+        margin: 2.5rem 3.75rem;
+        &-imagens {
+            max-width: none;
+            width: none;
+            gap: 1rem;
+            .imagem-grid {
+                .img-principal {
+                    height: 15rem;
+                }
+                .img-secundaria {
+                    object-position: 60% 100%;
+                    height: 20rem;
+                }
+                .img-terciaria {
+                    width: 45%;
+                    height: 20rem;
+                }
+            }
+        }
+
+        &-formulario {
+            max-width: none;
+            width: 95%;
+            margin: 2rem 0;
+            p {
+                font-size: 1.125rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .container__rodape {
+        padding: 1.5rem 2.5rem;
+    }
+}

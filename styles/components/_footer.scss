@@ -1,0 +1,11 @@
+@use '../abstract/variaveis' as variaveis;
+@use '../abstract/mixins' as mixins;
+
+.container__rodape {
+    padding: 1.5rem 7.5rem;
+    background: variaveis.$verde-calmante;
+    p {
+        @include mixins.ff-fs-c(variaveis.$paragrafo, variaveis.$ps, variaveis.$roxo-escuro);
+        text-align: center;
+    }
+}
