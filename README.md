@@ -1,4 +1,4 @@
-<h1 align="center">✨🌿 Bem-vindo ao Projeto Calmara Spa! 🌿✨</h1>
+<h1 align="center">✨🌿 Bem-vindo ao Projeto Calmaria Spa! 🌿✨</h1>
 
 ![Calmaria Spa - Imagens](https://github.com/user-attachments/assets/d035b600-e89f-4eb6-a94c-605bfdaff455)
 🚀✨ Este projeto tem como objetivo criar um site para uma empresa fictícia criada pela Alura, o **Calmaria Spa**, interativo e responsivo, utilizando **SASS** para criar um código bem estruturado. O foco do projeto foi em boas práticas de desenvolvimento web, com estruturação do CSS utilizando o SASS e criando telas responsivas. ✨🚀
