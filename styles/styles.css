@@ -551,25 +551,24 @@
     gap: 2rem;
   }
   .container__navegacao-link {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .container__home {
-    background-image: none;
-    margin: 2.5rem 0;
+    margin: 1rem 0 0 0;
     padding: 0 2rem;
   }
   .container__home-left h1 {
     line-height: 120%;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .container__principal {
-    margin: 2.5em 0;
-    padding: 2rem 0;
+    padding: 1rem 1.5rem;
   }
   .container__principal-conteudo .img-principal {
     height: 15rem;
   }
   .container__principal-conteudo .img-secundaria {
+    height: 15rem;
     width: 50%;
   }
   .container__principal-conteudo-img {
@@ -584,7 +583,7 @@
   }
   .container__descontos {
     background-image: none;
-    margin: 1rem 0;
+    margin: 0;
     padding: 2rem 0;
     width: 100%;
   }
@@ -604,33 +603,42 @@
   .container__contato {
     justify-content: center;
     gap: 1rem;
-    margin: 2.5rem 3.75rem;
+    margin: 2rem 2.5rem 0 2.5rem;
   }
   .container__contato-imagens {
     max-width: none;
     width: none;
+  }
+  .container__contato-imagens .imagem-grid {
     gap: 1rem;
+    margin: 0;
+    padding: 0;
   }
   .container__contato-imagens .imagem-grid .img-principal {
+    width: 100%;
     height: 15rem;
   }
   .container__contato-imagens .imagem-grid .img-secundaria {
     -o-object-position: 60% 100%;
        object-position: 60% 100%;
+    width: 48%;
     height: 20rem;
   }
   .container__contato-imagens .imagem-grid .img-terciaria {
-    width: 45%;
+    width: 48%;
     height: 20rem;
   }
   .container__contato-formulario {
     max-width: none;
-    width: 95%;
-    margin: 2rem 0;
+    width: 75%;
+    margin: 1rem 4rem;
   }
   .container__contato-formulario p {
     font-size: 1.125rem;
     margin: 0;
+  }
+  .container__contato-formulario .formulario-btn {
+    width: 100%;
   }
   .container__rodape {
     padding: 1.5rem 2.5rem;
